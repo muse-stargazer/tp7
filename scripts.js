@@ -37,6 +37,11 @@ function Recipe(recipeName, contributorName, imageURL, ingredientsURL, equipment
   
   this.displayRecipe = function() {
     document.querySelector("#header h1").innerHTML = this.recipeName;
+    document.querySelector("#contributor").innerHTML = this.contributor;
+    document.querySelector("#header").style.backgroundImage = "url(" + this.imageURL + ")";
+    loadFileInto(this.ingredients, "#ingredients ul");
+    loadFileInto(this.equipment, "#equipment ul");
+    loadFileInto(this.directions, "#directions ol");
     
   }
   
