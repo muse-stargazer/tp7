@@ -88,22 +88,6 @@ ol {
   border-right: .2vw solid maroon;
 }
 
-/*hide the columns at first
-
-#bigflex #ingredients ul,
-#bigflex #equipment ul,
-#bigflex #directions ol {
-  display: none;
-}
-
-/*show the columns onclick
-
-#bigflex #ingredients.tpshow ul,
-#bigflex #equipment.tpshow ul,
-#bigflex #directions.tpshow ol {
-  display: block;
-}*/
-
 ol li {
   margin-top: 1vw;
 }
@@ -164,16 +148,6 @@ body {
   margin: 0 auto 4vw;
   flex-wrap: wrap;
 }
-
-/*----This did not work----
-  #thanks::before {
-  content: "";
-  background-image: url(flan-con-dulce-de-leche-uruguayo.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 1;
-}*/
 
 #thankscap {
   color: black;

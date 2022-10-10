@@ -13,7 +13,7 @@ function loadFileInto(fromFile, whereTo) {
   // provides code to do something in response to the AJAX request
   ajax.onreadystatechange = function() {
     if ((this.readyState == 4) && (this.status == 200)) {
-      document.querySelector(whereTo).innerHTML += this.responseText;
+      document.querySelector(whereTo).innerHTML = this.responseText;
 
     } else if ((this.readyState == 4) && (this.status != 200)) {
       console.log("Error: " + this.responseText);
@@ -41,20 +41,34 @@ function Recipe(recipeName, contributorName, imageURL, ingredientsURL, equipment
     document.querySelector("#header").style.backgroundImage = "url(" + this.imageURL + ")";
     loadFileInto(this.ingredients, "#ingredients ul");
     loadFileInto(this.equipment, "#equipment ul");
-    loadFileInto(this.directions, "#directions ol");
-    
+    loadFileInto(this.directions, "#directions ol");    
   }
   
   
 }
 
-CreamyCaramelFlan = new Recipe("Creamy Caramel Flan", "Bert Adams", "flan-by-max-griss.jpg", "ingredients.html", "equipment.html", "directions.html");
+CreamyCaramelFlan = new Recipe("Creamy Caramel Flan",
+                               "Bert Adams",
+                               "flan-by-max-griss.jpg",
+                               "ingredients.html",
+                               "equipment.html",
+                               "directions.html");
+BasicCrepes = new Recipe("Basic Crepes",
+                         "Zakiya Pruitt",
+                         "https://images.unsplash.com/photo-1485962307416-993e145b0d0d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=387&amp;q=80",
+                         "crepeIngredients.html",
+                         "crepeEquipment.html",
+                         "crepeDirections.html");
+
 
 
 window.onload = function() {
   
   document.querySelector("#firstRecipe").onclick = function() {
     CreamyCaramelFlan.displayRecipe();
+  }
+  document.querySelector("#secondRecipe").onclick = function() {
+    BasicCrepes.displayRecipe();
   }
 
   
