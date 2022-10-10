@@ -36,7 +36,10 @@ window.onload = function() {
   loadFileInto("directions.html", "#directions ol");
 
   document.querySelector("#header h1").classList.add("tp");
-
+  
+  //trying to get header h1 responsive through js since media queries are no longer effective on it. JS media queries are eluding me. 
+  //document.querySelector("header h1")
+  
   document.querySelector("#header h1.tp").onclick = function() {
     this.classList.toggle("white");
   }
@@ -69,6 +72,6 @@ window.onload = function() {
     document.querySelector("#bigflex #directions ol").innerHTML += '<li>Use <span class="notice">dragon claw</span> to shave <span class="notice">sunshine dust</span> <span class="measure">sparingly</span> over flan.</li><li>Enjoy!</li>';
   }, 100);
 
-
-
 }; // end window.onload
+
+

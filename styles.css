@@ -52,6 +52,11 @@ h4 {
   text-align: center;
 }
 
+#header h4 {
+  color: black;
+  text-shadow: 2px 2px 4px red;
+}
+
 ul,
 ol {
   margin-top: 0;
