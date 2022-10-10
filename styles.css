@@ -9,7 +9,7 @@
   }
 
 #nav a {
-  background-color: rgba(223, 112, 32, 0.7);
+  background-color: rgba(255, 239, 213, 0.5);
   text-decoration: none;
   font-size: 2vw;
 }
@@ -67,16 +67,18 @@ h4 {
 #header h4 {
   color: black;
   text-shadow: 2px 2px 4px red;
+  margin: 0, 0;
 }
 
 #header h3 {
   color: black;
   text-shadow: 2px 2px 3px red;
   font-size: 2vw;
+  margin: 0, 0;
 }
 
 #header h1, #header h3, #header h4 {
-  background-color: rgba(223, 112, 32, 0.7);
+  background-color: rgba(255, 239, 213, 0.7);
 }
 ul,
 ol {
