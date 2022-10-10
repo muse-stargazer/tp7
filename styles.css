@@ -2,8 +2,20 @@
   box-sizing: border-box;
 }
 
+#nav {
+  width: 100%; 
+  display: flex;
+  justify-content: space-evenly;
+  }
+
+#nav a {
+  background-color: rgba(223, 112, 32, 0.7);
+  text-decoration: none;
+  font-size: 2vw;
+}
+
 #header {
-  background-image: url(flan-by-max-griss.jpg);
+  background-image: none; /*url(flan-by-max-griss.jpg);*/
   background-position: left;
   background-size: cover;
   height: 30vw;
@@ -26,10 +38,10 @@ h1 {
 
 /* js #header h1 on.window */
 
-#header h1.tp {
+/*#header h1.tp {
   font-size: 5vw;
   text-shadow: 3px 3px 6px red;
-}
+}*/
 
 #header h1.white {
   color: white;
@@ -70,7 +82,7 @@ ol {
   border-right: .2vw solid maroon;
 }
 
-/*hide the columns at first*/
+/*hide the columns at first
 
 #bigflex #ingredients ul,
 #bigflex #equipment ul,
@@ -78,13 +90,13 @@ ol {
   display: none;
 }
 
-/*show the columns onclick*/
+/*show the columns onclick
 
 #bigflex #ingredients.tpshow ul,
 #bigflex #equipment.tpshow ul,
 #bigflex #directions.tpshow ol {
   display: block;
-}
+}*/
 
 ol li {
   margin-top: 1vw;
@@ -132,7 +144,7 @@ body {
 }
 
 #thanks {
-  background-image: url(flan-con-dulce-de-leche-uruguayo.jpg);
+  background-image: none; /*url(flan-con-dulce-de-leche-uruguayo.jpg);*/
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -181,7 +193,8 @@ body {
   padding: 0 1vw;
 }
 
-#footer.bg {
+#footer.bg,
+#nav {
   background-color: rgba(156, 78, 22, 0.6);
   box-sizing: border-box;
 }
@@ -205,7 +218,7 @@ body {
   h1 {
     font-size: 4vw;
   }
-  h4 {
+  h4, #nav a {
     font-size: 3vw;
   }
   li {
@@ -226,7 +239,7 @@ body {
   #headercap {
     font-size:
   }
-  h4 {
+  h4, #nav a {
     font-size: 3.5vw;
   }
   li {
@@ -250,7 +263,7 @@ body {
   h1 {
     font-size: 5vw;
   }
-  h4 {
+  h4, #nav a {
     font-size: 4vw;
   }
   li {
@@ -288,7 +301,7 @@ body {
   h1 {
     font-size: 6vw;
   }
-  h4 {
+  h4, #nav a {
     font-size: 5vw;
   }
   li {
@@ -309,7 +322,7 @@ body {
   h1 {
     font-size: 7vw;
   }
-  h4 {
+  h4, #nav a {
     font-size: 6vw;
   }
   li {
