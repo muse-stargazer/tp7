@@ -18,7 +18,7 @@
   background-image: none; /*url(flan-by-max-griss.jpg);*/
   background-position: left;
   background-size: cover;
-  height: 35vw;
+  height: auto;
   width: 100%;
   display: flex;
   align-items: center;
@@ -188,10 +188,13 @@ body {
 
 @media screen and (max-width: 1400px) {
   h1 {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
-  h4, #header h3, #nav a {
+  h4 {
     font-size: 3vw;
+  }
+  #header h3, #nav a {
+    font-size: 2.5vw;
   }
   li {
     font-size: 1.5vw;
@@ -206,13 +209,13 @@ body {
 
 @media screen and (max-width: 1020px) {
   h1 {
-    font-size: 4.5vw;
+    font-size: 4vw;
   }
-  #headercap {
-    font-size:
-  }
-  h4, #header h3, #nav a {
+  h4 {
     font-size: 3.5vw;
+  }
+  #header h3, #nav a {
+    font-size: 3vw;
   }
   li {
     font-size: 2vw;
@@ -233,10 +236,13 @@ body {
 
 @media screen and (max-width: 865px) {
   h1 {
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
-  h4, #header h3, #nav a {
+  h4 {
     font-size: 4vw;
+  }
+  #header h3, #nav a {
+    font-size: 3.5vw;
   }
   li {
     font-size: 2.5vw;
@@ -271,10 +277,25 @@ body {
 
 @media screen and (max-width: 650px) {
   h1 {
-    font-size: 6vw;
-  }
-  h4, #nav a {
     font-size: 5vw;
+  }
+  h4 {
+    font-size: 4.5vw;
+  }
+  #header h3, #nav a {
+    font-size: 4vw;
+  }
+  #header h1, h3, h4 {
+    grid-column-start: 1;
+  }
+  #header h1 {
+    grid-row-start: 1;
+  }
+  #header h3 {
+    grid-row-start: 2;
+  }
+  #header h4 {
+    grid-row-start: 3;
   }
   li {
     font-size: 3vw;
@@ -292,10 +313,13 @@ body {
 
 @media screen and (max-width: 530px) {
   h1 {
-    font-size: 7vw;
-  }
-  h4, #nav a {
     font-size: 5.5vw;
+  }
+  h4 {
+    font-size: 5vw;
+  }
+  #header h3, #nav a {
+    font-size: 4.5vw;
   }
   li {
     font-size: 3.75vw;
