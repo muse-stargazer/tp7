@@ -69,6 +69,12 @@ h4 {
   text-shadow: 2px 2px 4px red;
 }
 
+#header h3 {
+  color: black;
+  text-shadow: 2px 2px 3px red;
+  font-size: 2vw;
+}
+
 ul,
 ol {
   margin-top: 0;
@@ -144,7 +150,7 @@ body {
 }
 
 #thanks {
-  background-image: none; /*url(flan-con-dulce-de-leche-uruguayo.jpg);*/
+  background-image: url(kneading-dough.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -239,7 +245,7 @@ body {
   #headercap {
     font-size:
   }
-  h4, #nav a {
+  h4, h3, #nav a {
     font-size: 3.5vw;
   }
   li {
@@ -263,7 +269,7 @@ body {
   h1 {
     font-size: 5vw;
   }
-  h4, #nav a {
+  h4, h3, #nav a {
     font-size: 4vw;
   }
   li {
@@ -301,7 +307,7 @@ body {
   h1 {
     font-size: 6vw;
   }
-  h4, #nav a {
+  h4, h3, #nav a {
     font-size: 5vw;
   }
   li {
@@ -322,7 +328,7 @@ body {
   h1 {
     font-size: 7vw;
   }
-  h4, #nav a {
+  h4, h3, #nav a {
     font-size: 6vw;
   }
   li {

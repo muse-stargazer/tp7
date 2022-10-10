@@ -27,17 +27,33 @@ function loadFileInto(fromFile, whereTo) {
 }
 
 //New Recipe Object
-function Recipe (recipeName, contributorName, imageURL, ingredientsURL, equipmentURL, directionsURL) {
-  this.recipeName
-  this.contributor
-  this.imageURL
-  this.ingredients
-  this.equipment
-  this.directions
+function Recipe(recipeName, contributorName, imageURL, ingredientsURL, equipmentURL, directionsURL) {
+  this.recipeName = recipeName;
+  this.contributor = contributorName;
+  this.imageURL = imageURL;
+  this.ingredients = ingredientsURL;
+  this.equipment = equipmentURL;
+  this.directions = directionsURL;
+  
+  this.displayRecipe = function() {
+    document.querySelector("#header h1").innerHTML = this.recipeName;
+    
+  }
+  
+  
 }
 
-window.onload = function() {
+CreamyCaramelFlan = new Recipe("Creamy Caramel Flan", "Bert Adams", "flan-by-max-griss.jpg", "ingredients.html", "equipment.html", "directions.html");
 
+
+window.onload = function() {
+  
+  document.querySelector("#firstRecipe").onclick = function() {
+    CreamyCaramelFlan.displayRecipe();
+  }
+
+  
+  //stuff I wanted to keep from tp6
   document.querySelector("#header h1").classList.add("tp");
   
   document.querySelector("#header h1.tp").onclick = function() {
