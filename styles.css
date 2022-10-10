@@ -1,0 +1,337 @@
+* {
+  box-sizing: border-box;
+}
+
+#header {
+  background-image: url(flan-by-max-griss.jpg);
+  background-position: left;
+  background-size: cover;
+  height: 30vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: Arial;
+  color: black;
+  font-size: 3vw;
+  text-shadow: 2px 2px 5px red;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* js #header h1 on.window */
+
+#header h1.tp {
+  font-size: 5vw;
+  text-shadow: 3px 3px 6px red;
+}
+
+#header h1.white {
+  color: white;
+  text-shadow: 4px 4px 6px black;
+}
+
+#headercap {
+  color: darkred;
+  align-self: flex-end;
+  /*align-self: bottom;*/
+  margin: auto 0 0;
+  padding-right: 1vw;
+}
+
+h4 {
+  margin-bottom: 2vw;
+  margin-top: 2vw;
+  font-size: 2vw;
+  color: maroon;
+  text-align: center;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  border-collapse: collapse;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: content-box;
+  border-left: .2vw solid maroon;
+  border-right: .2vw solid maroon;
+}
+
+/*hide the columns at first*/
+
+#bigflex #ingredients ul,
+#bigflex #equipment ul,
+#bigflex #directions ol {
+  display: none;
+}
+
+/*show the columns onclick*/
+
+#bigflex #ingredients.tpshow ul,
+#bigflex #equipment.tpshow ul,
+#bigflex #directions.tpshow ol {
+  display: block;
+}
+
+ol li {
+  margin-top: 1vw;
+}
+
+ul li {
+  margin-top: .75vw;
+}
+
+li {
+  font-size: 1.2vw;
+  font-family: 'Caladea', serif;
+}
+
+body {
+  background-color: papayawhip;
+}
+
+.copyright {
+  font-family: Arial;
+  font-size: .75vw;
+  font-style: italic;
+  text-align: center;
+  margin: .5vw;
+}
+
+#ingredients {
+  color: #06179D;
+}
+
+#equipment {
+  color: #005c00;
+}
+
+#directions {
+  color: #652B10;
+}
+
+.notice {
+  font-weight: bold;
+}
+
+.measure {
+  font-style: italic;
+}
+
+#thanks {
+  background-image: url(flan-con-dulce-de-leche-uruguayo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vw;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8vw;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 4vw;
+  flex-wrap: wrap;
+}
+
+/*----This did not work----
+  #thanks::before {
+  content: "";
+  background-image: url(flan-con-dulce-de-leche-uruguayo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+}*/
+
+#thankscap {
+  color: black;
+  align-self: flex-start;
+}
+
+#thanks h1.bg {
+  background-color: rgba(255, 239, 213, 0.5);
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: chocolate;
+  color: white;
+  font-family: Arial;
+  font-size: .75vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1vw;
+}
+
+#footer.bg {
+  background-color: rgba(156, 78, 22, 0.6);
+  box-sizing: border-box;
+}
+
+#footer.bg p {
+  background-color: rgba(223, 112, 32, 0.7);
+  padding: 2px 6px;
+}
+
+#bigflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  min-height: 80vh;
+  padding-left: 2vw;
+}
+
+@media screen and (max-width: 1400px) {
+  h1 {
+    font-size: 4vw;
+  }
+  h4 {
+    font-size: 3vw;
+  }
+  li {
+    font-size: 1.5vw;
+  }
+  #footer {
+    font-size: 1vw;
+  }
+  .copyright {
+    font-size: 1vw;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  h1 {
+    font-size: 4.5vw;
+  }
+  #headercap {
+    font-size:
+  }
+  h4 {
+    font-size: 3.5vw;
+  }
+  li {
+    font-size: 2vw;
+  }
+  ul li {
+    margin-top: 1vw;
+  }
+  ol li {
+    margin-top: 1.5vw;
+  }
+  #footer {
+    font-size: 1.5vw;
+  }
+  .copyright {
+    font-size: 1.2vw;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  h1 {
+    font-size: 5vw;
+  }
+  h4 {
+    font-size: 4vw;
+  }
+  li {
+    font-size: 2.5vw;
+  }
+  ul li {
+    margin-top: 1.5vw;
+  }
+  ol li {
+    margin-top: 2vw;
+  }
+}
+
+@media screen and (max-width: 1020px) and (min-width: 531px) {
+  #bigflex {
+    display: grid;
+    grid-row-gap: .5vw;
+  }
+  #ingredients {
+    grid-row-start: 1;
+  }
+  #equipment {
+    grid-row-start: 1;
+  }
+  #directions {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 6vw;
+  }
+  h4 {
+    font-size: 5vw;
+  }
+  li {
+    font-size: 3vw;
+  }
+  #footer {
+    font-size: 2vw;
+  }
+  .copyright {
+    font-size: 1.5vw;
+  }
+  #thanks {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  h1 {
+    font-size: 7vw;
+  }
+  h4 {
+    font-size: 6vw;
+  }
+  li {
+    font-size: 3.75vw;
+  }
+  #bigflex {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+  }
+  ul,
+  ol {
+    padding-left: 8vw;
+    padding-right: 8vw;
+    border-left: 1vw solid maroon;
+    border-right: 1vw solid maroon;
+  }
+  #thanks {
+    display: flex;
+    flex-direction: column;
+    height: 50vw;
+    padding-bottom: 8vw;
+  }
+  #footer {
+    font-size: 2.5vw;
+  }
+  .copyright {
+    font-size: 2vw;
+  }
+}
