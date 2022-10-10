@@ -59,6 +59,12 @@ BasicCrepes = new Recipe("Basic Crepes",
                          "crepeIngredients.html",
                          "crepeEquipment.html",
                          "crepeDirections.html");
+PeachCrisp = new Recipe("Peach Crisp",
+                         "Zaire Moon",
+                         "https://images.pexels.com/photos/4397920/pexels-photo-4397920.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2",
+                         "crispIngredients.html",
+                         "crispEquipment.html",
+                         "crispDirections.html");
 
 
 
@@ -69,6 +75,9 @@ window.onload = function() {
   }
   document.querySelector("#secondRecipe").onclick = function() {
     BasicCrepes.displayRecipe();
+  }
+  document.querySelector("#thirdRecipe").onclick = function() {
+    PeachCrisp.displayRecipe();
   }
 
   

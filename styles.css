@@ -75,6 +75,9 @@ h4 {
   font-size: 2vw;
 }
 
+#header h1, #header h3, #header h4 {
+  background-color: rgba(223, 112, 32, 0.7);
+}
 ul,
 ol {
   margin-top: 0;
